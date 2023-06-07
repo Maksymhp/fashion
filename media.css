@@ -12,6 +12,12 @@
         font-size: 60px;
         line-height: 80px;
     }
+    
+    .app__img {
+    position: relative;
+    z-index: -1;
+    }
+    
 
     .app__information {
         flex-direction: column-reverse;
