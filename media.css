@@ -1,4 +1,20 @@
+/* @media (max-width:1136px)  {
+    .header__img {
+        max-width: 100%;
+    }
+} */
+
 @media (max-width:1000px) {
+    .header__left {
+        padding-left: 0;
+    }
+    .header__title {
+        font-size: 60px;
+    }
+
+    /* .header__img {
+        max-width: 100%;
+    } */
     .arrivals__title {
         font-size: 18px;
         line-height: 25px;
@@ -12,12 +28,17 @@
         font-size: 60px;
         line-height: 80px;
     }
-    
-    .app__img {
-    position: relative;
-    z-index: -1;
+
+    .payday__title::before {
+        width: 280px;
+        height: 80px;
     }
-    
+
+    .app__img {
+        max-width: 100%;
+        position: relative;
+        z-index: -1;
+    }
 
     .app__information {
         flex-direction: column-reverse;
@@ -34,6 +55,24 @@
     }
 }
 
+@media (max-width:925px){
+
+    .nav{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .header__img {
+        max-width: 415px;
+    }
+
+    .arrivals__info:hover {
+        scale: 1;
+    }
+
+    .favorite__info:hover {
+        scale: 1;
+    }
+}
 @media (max-width:860px) {
 
     .footer__block {
@@ -51,6 +90,66 @@
 }
 
 @media (max-width:760px) {
+
+    .nav {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .burger__btn {
+        width: 50px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .nav__items {
+        display: none;
+    }
+    
+    .nav__items--active {
+        display: flex;
+        gap: 3rem;
+        flex-direction: column;
+        position: absolute;
+        right: 80px;
+        top: 70px;
+        padding: 3rem 5rem;
+        background-color: #DFC23E;
+        border-radius: 15px;
+        z-index: 2;
+    }
+
+    .nav__link {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .header__information {
+        flex-direction: column;
+        gap: 80px;
+        margin-bottom: 0;
+    }
+
+    .header__left{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .header__title::before {
+        width: 265px;
+        top: 100px;
+        left: 0;
+    }
+
+    .header__subtitle {
+        margin-bottom: 80px;
+    }
+
     .brands {
         padding-left: 50px;
         padding-right: 50px;
@@ -79,6 +178,11 @@
     .payday__title {
         font-size: 43px;
     }
+
+    .payday__title::before {
+        width: 210px;
+    }
+
 
     .payday__text {
         font-size: 23px;
@@ -111,6 +215,18 @@
 }
 
 @media (max-width:600px) {
+    .nav__items--active {
+        width: 100%;
+        top: 80px;
+        left: 0;
+        text-align: center;
+        border-radius: 0;
+    }
+
+    .header__left {
+        padding-top: 0;
+    }
+
     .payday__right {
         margin-top: -250px;
     }
@@ -118,8 +234,34 @@
 }
 
 @media (max-width:450px) {
+    .header__img {
+        max-width: 100%;
+    }
+    .header__title {
+        font-size: 55px;
+        line-height: 65px;
+    }
+
+    .header__button {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .header__btn {
+        margin-left: 0;
+    }
+
     .title {
         font-size: 30px;
+    }
+
+    .header__title::before {
+        width: 190px;
+        height: 80px;
+        left: 75px;
+        top: 120px;
+
     }
 
     .title::after {
@@ -134,12 +276,39 @@
         line-height: 45px;
     }
 
+    .payday__title::before {
+        height: 60px;
+        top: -15px;
+        left: 10;
+    }
+
+    .join__info {
+        padding: 40px 10px;
+    }
+
     .join__title {
         font-size: 36px;
     }
 
     .join__subtitle {
         font-size: 22px;
+    }
+
+    .join__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .input__form {
+        max-width: 90%;
+    }
+
+    .input__btn {
+        position: static;
+        width: 90%;
+        padding: 20px 28px;
     }
 
     .footer__nav {
@@ -150,9 +319,39 @@
 }
 
 @media (max-width:385px) {
+    .logo {
+        max-width: 100%;
+    }
+    .nav__items--active {
+        gap: 2rem;
+        padding: 40px 20px;
+    }
+
+    .nav__link {
+        font-size: 17px;
+    }
+    .header__title {
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    .header__title::before {
+        height: 50px;
+        left: 0px;
+        top: 110px;
+    }
+
     .title::after {
-        bottom: -50px;
-        left: 40px;
+        bottom: -8px;
+        left: 28px;
+    }
+
+    .header__subtitle {
+        font-size: 20px;
+    }
+
+    .header__btn {
+        font-size: 20px;
     }
 
     .payday__information {
@@ -166,6 +365,13 @@
     .payday__title {
         font-size: 32px;
     }
+
+    .payday__title::before {
+        width: 150px;
+        top: -5px;
+        height: 50px;
+    }
+
 
     .payday__text {
         line-height: 27px;
@@ -197,6 +403,19 @@
         margin: 0;
     }
 
+    .join__title {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .join__subtitle {
+        font-size: 19px;
+    }
+
+    .input__form {
+        padding: 18px;
+    }
+
     .footer__information {
         padding-bottom: 30px;
     }
@@ -205,6 +424,21 @@
 }
 
 @media (max-width:270px) {
+
+    .container {
+        padding: 10px;
+    }
+    .header__title {
+        font-size: 30px;
+        line-height: 45px;
+        word-wrap: break-word;
+    }
+
+    .header__title::before {
+        left: 35px;
+        top: 42px;
+        width: 100px;
+    }
     .payday__right {
         padding: 20px;
     }
@@ -212,6 +446,12 @@
     .payday__title {
         font-size: 25px;
         line-height: 35px;
+    }
+
+    .payday__title::before {
+        width: 125px;
+        top: -3px;
+        height: 40px;
     }
 
     .payday__text {
@@ -232,6 +472,23 @@
             line-height: 25px;
             font-size: 15px;
         
+    }
+
+    .join__title {
+        font-size: 23px;
+        line-height: 35px;
+    }
+
+    .join__subtitle {
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width:200px) {
+    .payday__btn {
+        font-size: 14px;
+        padding: 15px 20px;
     }
 
 }
